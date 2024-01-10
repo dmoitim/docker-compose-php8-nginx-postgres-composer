@@ -1,0 +1,23 @@
+{
+    "name": "dmoitim/docker-compose-php8-nginx-postgres-composer",
+    "description": "Docker Compose configuration to run PHP-FPM 8.3.1 with Nginx 1.25.3, PostgreSQL 14.10 and Composer LTS.",
+    "type": "metapackage",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Devair Luiz Moitim",
+            "email": "dmoitim@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-pdo": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5.5"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
